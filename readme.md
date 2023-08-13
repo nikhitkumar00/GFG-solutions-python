@@ -5,6 +5,7 @@ Welcome to the Lookup Study Material project! This README provides essential inf
 ## Table of Contents
 - [Sorting Elements using `arr.sort()`](#sorting-elements)
 - [Checking if a Number is a Power of 2](#power-of-2)
+- [Creating a Dictionary using `dict.fromkeys()`](#creating-dictionary)
 
 ---
 
@@ -46,4 +47,27 @@ def is_power_of_2(n):
 
 print(is_power_of_2(4))  # Output: True
 print(is_power_of_2(5))  # Output: False
+```
+
+---
+
+## Creating a Dictionary using `dict.fromkeys()`
+
+### Syntax
+```python
+d = dict.fromkeys(list, default_value_function())
+```
+
+- The `dict.fromkeys()` method creates a dictionary using the elements of the `list` as keys.
+- The `default_value_function()` is called to determine the default value for all keys.
+
+**Example:**
+```python
+# Create a dictionary with keys from a list and a dynamically determined default value
+def default_value_function():
+    return 0
+
+keys = ['a', 'b', 'c']
+result_dict = dict.fromkeys(keys, default_value_function())
+print(result_dict)  # Output: {'a': 0, 'b': 0, 'c': 0}
 ```
