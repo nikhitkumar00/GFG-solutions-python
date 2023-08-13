@@ -3,10 +3,10 @@
 Welcome to the Lookup Study Material project! This README provides essential information on key Python concepts.
 
 ## Table of Contents
-- [Sorting Elements using `arr.sort()`](#sorting-elements)
-- [Checking for Power of 2](#power-of-2)
-- [Creating a Dictionary with Default Values](#creating-dictionary)
-- [Applying Functions to Create Dictionary Values](#applying-function-to-create-values)
+- [Sorting Elements using `arr.sort()`](#sorting-elements-using-arrsort)
+- [Checking for Power of 2](#checking-for-power-of-2)
+- [Creating a Dictionary with Default Values](#creating-a-dictionary-with-default-values)
+- [Applying Functions to Create Dictionary Values](#applying-functions-to-create-dictionary-values)
 
 ---
 
