@@ -4,6 +4,7 @@ class Solution:
         result = "".join(arr)
         return result if result[0] != "0" else "0"
 
+
 """
 5555555555
 3333333333
