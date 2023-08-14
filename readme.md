@@ -95,7 +95,7 @@ When using `list.sort()` or `sorted()` in functions:
 
 ```python
 def sort_list_and_return(l):
-    l.sort()   # Returns None
+    return l.sort()   # Returns None
 
 def sorted_list_and_return(l):
     return sorted(l)  # Returns a new sorted list
