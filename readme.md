@@ -7,6 +7,7 @@ Welcome to the Lookup Study Material project! This README provides essential inf
 - [Checking for Power of 2](#checking-for-power-of-2)
 - [Creating a Dictionary with Default Values](#creating-a-dictionary-with-default-values)
 - [Applying Functions to Create Dictionary Values](#applying-functions-to-create-dictionary-values)
+- [Return Values of `list.sort()` and `sorted()` in Functions](#return-values-of-listsort-and-sorted-in-functions)
 
 ---
 
@@ -83,3 +84,18 @@ a = [1, 2, 3, 4, 5]
 d = {ele: is_even(ele) for ele in a}
 print(d)  # Output: {1: 0, 2: 1, 3: 0, 4: 1, 5: 0}
 ```
+---
+## Return Values of `list.sort()` and `sorted()` in Functions
+
+When using `list.sort()` or `sorted()` inside a function, remember:
+
+- `list.sort()` sorts the list in-place and returns `None`.
+- `sorted()` returns a new sorted list without modifying the original list.
+
+**Example:**
+```python
+def sort_list_and_return(l):
+    return l.sort()   # Returns None
+
+def sorted_list_and_return(l):
+    return sorted(l)  # Returns a new sorted list
