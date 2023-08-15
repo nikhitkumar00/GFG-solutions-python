@@ -138,11 +138,3 @@ for index, value in enumerate(arr):
 ```
 
 -   `enumerate` returns both the index and value as tuples, allowing you to iterate over arrays with index information.
-
-**Example:**
-
-```python
-arr = [10, 20, 30, 40, 50]
-for index, value in enumerate(arr):
-    print(f"Element at index {index}: {value}")
-```
