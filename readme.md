@@ -7,6 +7,7 @@
 -   [Return Values of `list.sort()` and `sorted()` in Functions](#return-values-of-listsort-and-sorted-in-functions)
 -   [Using `enumerate` to Get Index-Value Pairs](#using-enumerate-to-get-index-value-pairs)
 -   [Using `enumerate` with Arrays](#using-enumerate-with-arrays)
+-   [Finding the Index of an Element using `arr.index()`](#finding-the-index-of-an-element-using-arrindex)
 
 ---
 
@@ -138,3 +139,17 @@ for index, value in enumerate(arr):
 ```
 
 -   `enumerate` returns both the index and value as tuples, allowing you to iterate over arrays with index information.
+
+# Study Material
+
+Welcome to the Lookup Study Material project! This README provides essential information on key Python concepts.
+
+---
+
+## Finding the Index of an Element using `arr.index()`
+
+To find the index of an element in an array, use the `arr.index()` method:
+
+```python
+index = arr.index(element)
+```
