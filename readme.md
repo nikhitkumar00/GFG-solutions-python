@@ -140,10 +140,6 @@ for index, value in enumerate(arr):
 
 -   `enumerate` returns both the index and value as tuples, allowing you to iterate over arrays with index information.
 
-# Study Material
-
-Welcome to the Lookup Study Material project! This README provides essential information on key Python concepts.
-
 ---
 
 ## Finding the Index of an Element using `arr.index()`
@@ -152,4 +148,16 @@ To find the index of an element in an array, use the `arr.index()` method:
 
 ```python
 index = arr.index(element)
+```
+
+
+-   Returns the index of the first occurrence of `element` in the array.
+-   Raises a `ValueError` if `element` is not found in the array.
+
+**Example:**
+
+```python
+arr = [10, 20, 30, 40, 20, 50]
+index = arr.index(20)
+print(index)  # Output: 1
 ```
