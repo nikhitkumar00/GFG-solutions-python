@@ -1,24 +1,21 @@
 """
-# node class:
-
 class Node:
     def __init__(self,val):
         self.next=None
         self.data=val
-
 """
 
 
 class Solution:
     def removeLoop(self, head):
         i = 0
-        dic = {head:None}
+        dic = {head: None}
         while head.next != None:
             if head.next in dic:
                 head.next = None
                 continue
             dic[head.next] = None
-            i +=1
+            i += 1
             head = head.next
 
 
