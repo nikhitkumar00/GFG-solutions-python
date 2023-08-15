@@ -6,6 +6,7 @@
 -   [Applying Functions to Create Dictionary Values](#applying-functions-to-create-dictionary-values)
 -   [Return Values of `list.sort()` and `sorted()` in Functions](#return-values-of-listsort-and-sorted-in-functions)
 -   [Using `enumerate` to Get Index-Value Pairs](#using-enumerate-to-get-index-value-pairs)
+-   [Using `enumerate` with Arrays](#using-enumerate-with-arrays)
 
 ---
 
@@ -123,4 +124,25 @@ dic = {x: index for index, x in enumerate(A2)}
 A2 = [10, 20, 30, 40, 50]
 dic = {x: index for index, x in enumerate(A2)}
 print(dic)  # Output: {10: 0, 20: 1, 30: 2, 40: 3, 50: 4}
+```
+
+---
+
+## Using `enumerate` with Arrays
+
+You can use `enumerate` with arrays to get both index and value for each element:
+
+```python
+for index, value in enumerate(arr):
+    print(f"Element at index {index}: {value}")
+```
+
+-   `enumerate` returns both the index and value as tuples, allowing you to iterate over arrays with index information.
+
+**Example:**
+
+```python
+arr = [10, 20, 30, 40, 50]
+for index, value in enumerate(arr):
+    print(f"Element at index {index}: {value}")
 ```
