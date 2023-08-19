@@ -8,6 +8,7 @@
 -   [Using `enumerate` to Get Index-Value Pairs](#using-enumerate-to-get-index-value-pairs)
 -   [Using `enumerate` with Arrays](#using-enumerate-with-arrays)
 -   [Finding the Index of an Element using `arr.index()`](#finding-the-index-of-an-element-using-arrindex)
+-   [Updating a Global Array Reference](#updating-a-global-array-reference)
 
 ---
 
@@ -160,4 +161,19 @@ index = arr.index(element)
 arr = [10, 20, 30, 40, 20, 50]
 index = arr.index(20)
 print(index)  # Output: 1
+```
+
+## Updating a Global Array Reference
+
+When updating a global reference of an array, it's important to note that you need to change the elements of the array one by one.
+
+**Example:**
+
+Consider the following code snippet:
+
+```python
+class Solution:
+    def rearrange(self, arr, n):
+        for i in range(n):
+            arr[i] = array[i]  # Update the original array
 ```
