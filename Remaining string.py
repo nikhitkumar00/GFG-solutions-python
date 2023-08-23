@@ -7,7 +7,7 @@ class Solution:
             if S[i] == ch:
                 temp += 1
                 if temp == count:
-                    return S[i+1:] if len(S[i+1:])>0 else "Empty string"
+                    return S[i + 1 :] if len(S[i + 1 :]) > 0 else "Empty string"
         return "Empty string"
 
 
