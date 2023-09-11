@@ -9,6 +9,7 @@
 -   [Using `enumerate` with Arrays](#using-enumerate-with-arrays)
 -   [Finding the Index of an Element using `arr.index()`](#finding-the-index-of-an-element-using-arrindex)
 -   [Updating a Global Array Reference](#updating-a-global-array-reference)
+-   [Perfect Squares](#checking-if-a-number-is-a-perfect-square)
 
 ---
 
@@ -177,3 +178,28 @@ class Solution:
         for i in range(n):
             arr[i] = array[i]  # Update the original array
 ```
+
+## Checking if a Number is a Perfect Square
+
+```python
+def is_perfect_square(number):
+    if number < 0:
+        return False
+    
+    i = 1
+    while number > 0:
+        number -= i
+        i += 2
+
+    return number == 0
+
+print(is_perfect_square(16))  # Output: True
+print(is_perfect_square(25))  # Output: True
+print(is_perfect_square(14))  # Output: False
+```
+
+-   This code defines a function `is_perfect_square` that checks if a given number is a perfect square.
+-   It returns `True` if the number is a perfect square and `False` otherwise.
+-   It works by subtracting consecutive odd numbers from the given number and checking if it reaches zero.
+-   If it reaches zero, the original number is a perfect square.
+-   This method is efficient for large numbers as it avoids computing square roots.
