@@ -198,8 +198,6 @@ print(is_perfect_square(25))  # Output: True
 print(is_perfect_square(14))  # Output: False
 ```
 
--   This code defines a function `is_perfect_square` that checks if a given number is a perfect square.
--   It returns `True` if the number is a perfect square and `False` otherwise.
 -   It works by subtracting consecutive odd numbers from the given number and checking if it reaches zero.
 -   If it reaches zero, the original number is a perfect square.
 -   This method is efficient for large numbers as it avoids computing square roots.
