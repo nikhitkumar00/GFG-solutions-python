@@ -1,4 +1,3 @@
-# User function Template for python3
 class Solution:
     def checkPerfectSquare(ob, N):
         if N < 0:
@@ -11,15 +10,5 @@ class Solution:
 
         return 1 if N == 0 else 0
 
-
-# {
-# Driver Code Starts
-# Initial Template for Python 3
-if __name__ == "__main__":
-    t = int(input())
-    for _ in range(t):
-        N = int(input())
-
-        ob = Solution()
-        print(ob.checkPerfectSquare(N))
-# } Driver Code Ends
+ob = Solution()
+print(ob.checkPerfectSquare(25))
