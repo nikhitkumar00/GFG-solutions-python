@@ -22,9 +22,7 @@ class Solution:
                 r, c = queue.popleft()
                 for dr, dc in directions:
                     row, col = r + dr, c + dc
-                    if (row < 0 or row == rows or col < 0 or col == cols) or grid[row][
-                        col
-                    ] != 1:
+                    if (row < 0 or row == rows or col < 0 or col == cols) or grid[row][col] != 1:
                         continue
                     grid[row][col] = 2
                     queue.append([row, col])
