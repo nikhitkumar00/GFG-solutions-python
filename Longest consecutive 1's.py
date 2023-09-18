@@ -1,7 +1,6 @@
 class Solution:
     def maxConsecutiveOnes(self, N):
-        binary = bin(N)[2:]
-        return max(map(len, binary.split("0")))
+        return max(map(len, bin(N)[2:].split("0")))
 
 
 n = int(input())
