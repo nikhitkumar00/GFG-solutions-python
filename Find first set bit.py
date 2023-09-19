@@ -1,12 +1,12 @@
 class Solution:
     def getFirstSetBit(self, n):
-        n = bin(n)[:1:-1]
+        binary = bin(n)[2:][::-1]
         out = 0
-        for i in n:
-            if i == "1":
-                break
+        for i in binary:
             out += 1
-        return out + 1 if n != "0" else 0
+            if i == "1":
+                return out
+        return 0
 
 
 n = 0
