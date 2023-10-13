@@ -1,25 +1,16 @@
-"""
-		# Node Class
-		class Node:
-		    def __init__(self, data):   # data -> value stored in node
-		        self.data = data
-		        self.next = None
-"""
-
-
 class Solution:
     def detectLoop(self, head):
-        dic = {head: 1}
+        visited = set()
         while head != None:
-            if head.next in dic:
+            if head in visited:
                 return True
-            dic[head.next] = 1
+            visited.add(head)
             head = head.next
         return False
 
 
 class Node:
-    def __init__(self, data):  # data -> value stored in node
+    def __init__(self, data):
         self.data = data
         self.next = None
 
@@ -46,9 +37,10 @@ class LinkedList:
         self.tail.next = walk
 
 
-n = int(input())
-LL = LinkedList()
-for i in input().split():
-    LL.insert(int(i))
-LL.loopHere(int(input()))
-print(Solution().detectLoop(LL.head))
+for _ in range(int(input())):
+    n = int(input())
+    LL = LinkedList()
+    for i in input().split():
+        LL.insert(int(i))
+    LL.loopHere(int(input()))
+    print(Solution().detectLoop(LL.head))
