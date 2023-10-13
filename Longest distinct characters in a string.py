@@ -6,13 +6,14 @@ class Solution:
         maxx = -1
         while right < len(S):
             if S[right] in dic:
-                dic.pop(S[left],None)
+                dic.pop(S[left], None)
                 left += 1
             else:
                 dic[S[right]] = 1
                 right += 1
-            maxx = len(dic) if len(dic) > maxx else maxx
+            maxx = max(len(dic), maxx)
         return maxx
+
 
 S = "aaa"
 solObj = Solution()

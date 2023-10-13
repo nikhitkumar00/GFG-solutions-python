@@ -4,7 +4,7 @@ class Solution:
         return "0" * (30 - len(binary)) + str(binary)
 
 
-n = int(input())
+n = 625
 ob = Solution()
 ans = ob.getBinaryRep(n)
 print(ans)
