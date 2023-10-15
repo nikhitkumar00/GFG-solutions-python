@@ -7,8 +7,8 @@ class Solution:
         return arr
 
 
-n = int(input())
-arr = list(map(int, input().strip().split()))
+n = 10
+arr = [9,8,7,6,5,4,3,2,1,0]
 ob = Solution()
 ob.bubbleSort(arr, n)
 for i in arr:
