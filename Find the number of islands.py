@@ -1,4 +1,3 @@
-# User function Template for python3
 from collections import deque
 
 class Solution:
@@ -62,4 +61,3 @@ if __name__ == "__main__":
     ]
     obj = Solution()
     print(obj.numIslands(grid))
-# } Driver Code Ends
