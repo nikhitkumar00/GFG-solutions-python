@@ -3,8 +3,7 @@ def PalinArray(arr, n):
     for i in arr:
         i = str(i)
         if i != i[::-1]:
-            out = False
-            break
+            return False
     return out
 
 
