@@ -1,13 +1,13 @@
 class Solution:
     def firstRepChar(self, s):
-        dic = {}
+        dic = set()
         for i in s:
             if i in dic:
                 return i
             else:
-                dic[i] = 1
+                dic.add(i)
         return -1
 
-s = "abc"
+s = "abcasbd"
 solObj = Solution()
 print(solObj.firstRepChar(s))
