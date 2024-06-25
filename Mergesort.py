@@ -27,6 +27,7 @@ class Solution:
             self.mergeSort(arr, m + 1, r)
             self.merge(arr, l, m, r)
 
+
 if __name__ == "__main__":
     n = 9
     arr = [5, 7, 8, 9, 6, 1, 2, 3, 4]
